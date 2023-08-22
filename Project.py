@@ -3,7 +3,7 @@ from pprint import pprint
 import googleapiclient.discovery
 import json
 import csv
-from API_Key import myapi
+
 
 def banner():
     print("******************************")
@@ -39,7 +39,7 @@ class Ycom(object):
 
         api_service_name = "youtube"
         api_version = "v3"
-        DEVELOPER_KEY = myapi
+        DEVELOPER_KEY = AIzaSyCT0RclZ8ZXhPVhIp6mwOLkP3QSG1O5JUo
 
         self.youtube = googleapiclient.discovery.build(
             api_service_name, api_version, developerKey = DEVELOPER_KEY)
